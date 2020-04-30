@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <title>DJS - Guess the Number.</title>
+</head>
+
+<body>
+
+  <header>
+    <ul>
+      <li><i class="fas fa-crosshairs text-white"></i> A DJSands Creation <i class="fas fa-crosshairs text-white"></i>
+      </li>
+    </ul>
+  </header>
+
+  <div class="container">
+    <div class="info">
+      <h1>Guess my Number!</h1>
+      <h4>⚆ 🧮 ⚆ 🧮 ⚆ 🧮 ⚆ 🧮 ⚆ 🧮 ⚆</h4>
+      <h2>Can you guess the secret number ??? </h2>
+      <h3>Are you getting hotter or colder ?!?</h3>
+    </div>
+
+    <div class="game">
+      <h4>❓ 🧿 ❓ 🧿 ❓ 🧿 ❓ 🧿 ❓</h4>
+      <h1 id="feedback"></h1>
+      <h4>🎲 💠 🎲 💠 🎲 💠 🎲 💠 🎲</h4>
+      <form>
+        <input type="text" name="userGuess" id="userGuess" class="text" maxlength="3" autocomplete="off"
+          placeholder="Enter your Guess" required />
+
+        <input type="submit" id="guessButton" class="button" name="submit" value="Guess" />
+
+        <input type="submit" id="startBtn" class="button" name="submit" value="Restart Game" />
+      </form>
+
+      <p>Guess # <span id="count">0</span>
+      </p>
+
+      <ul id="guessList" class="guessBox"></ul>
+
+    </div>
+
+    <footer class="main-footer">
+      <span>&copy;2019 <a class="" href="https://djsandscreation.github.io/djsandsCreations006/"><i
+            class="fas fa-crosshairs text-white"></i>
+          A DJSandsCreation </a><a
+          href="https://www.linkedin.com/in/diana-dj-j-sanderson-03321512?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BOZKCJH5ETzW0TkSZxZaOnw%3D%3D"><i
+            class="fab fa-linkedin"></i></a> <a href="https://distjames.wixsite.com/djsanderson"><i
+            class="fab fa-wix"></i></a> <a href="https://github.com/DJSandsCreation"><i
+            class="fab fa-github"></i></span>
+      </h1>
+    </footer>
+
+  </div>
+  <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
+
+<!-- A random number guessing game where the app randomly selects a number between 1 and 100, and the player tries to guess the number. The player gets feedback for each guess – “hot” if their guess was close, and “cold” if their guess was far. When the user guesses the secret number, the app lets them know, and they’ll have the option to start a new game.
+
+This app is built with HTML5, CSS3 and jQuery. -->

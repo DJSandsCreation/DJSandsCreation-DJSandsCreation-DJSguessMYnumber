@@ -1,0 +1,147 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  margin: 0.8em auto;
+  font-family: 'Lato', sans-serif;
+  background-color: rgb(15, 15, 15);
+  background-image: url(guess.png);
+  text-align: center;
+  color: white;
+}
+
+header {
+  margin: auto;
+  padding: 1em;
+  font-size: 2em;
+}
+
+/* container area */
+
+/* info */
+
+.info {
+  margin: auto;
+  padding: 1em;
+}
+
+h1 {
+  font-size: 3rem;
+  padding: 1em;
+  color: rgb(252, 7, 7);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 2px 3px 4px rgb(185, 113, 113);
+}
+
+h2,
+h3 {
+  font-size: 2rem;
+  padding: 0.5em;
+}
+
+/* game */
+
+.game p {
+  margin-top: 0.5em;
+  font-size: 2em;
+  padding-bottom: 0.5em;
+}
+
+/* inputs & buttons */
+
+
+input {
+  box-sizing: border-box;
+  width: 20em;
+  height: 3em;
+  display: block;
+  padding: 0.8em;
+  margin: 0.8em auto 0;
+  border: solid 1px #1f253d;
+  border-radius: 4px;
+}
+
+input:nth-child(1) {
+  background-color: rgb(235, 235, 241);
+}
+
+input:nth-child(2),
+input:nth-child(3) {
+  background-color: rgb(3, 6, 43);
+  color: #fff;
+}
+
+input .button {
+  background: rgb(13, 13, 14);
+  color: rgba(116, 112, 115, 0.561);
+  font-size: 2em;
+  padding: 0.2em;
+}
+
+input.button:hover {
+  background-color: #fa0606;
+  color: #fff;
+  transition: background 1s ease-in-out;
+  cursor: pointer;
+}
+
+/* feedback */
+
+#feedback {
+  font-size: 2em;
+  font-family: 'Lato', sans-serif;
+}
+
+ul.guessBox {
+  height: 5em;
+  margin: 10px auto 0;
+  padding: 0.5em;
+  display: block;
+  line-height: 2em;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  color: #fff;
+  overflow: auto;
+}
+
+ul.guessBox li {
+  display: inline;
+  background-color: #1a4e95;
+  padding: 0.3em;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  margin: 0.2em;
+  color: #fff;
+}
+
+#count {
+  color: #FCFCFC;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+/* footer */
+
+footer {
+  padding-top: 4em;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #fa0606;
+}
+
+@media (min-width:769px) {
+  header {
+    font-size: 3em;
+  }
+}
